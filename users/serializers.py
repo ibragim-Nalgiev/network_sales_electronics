@@ -9,9 +9,6 @@ class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
         fields = ('id', 'email', 'phone', 'country', 'city', 'password', 'is_active')
-        validators = [
-            EmailValidator(field="email")
-        ]
 
     @staticmethod
     def validate_password(value):
