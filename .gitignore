@@ -1,4 +1,5 @@
 /.env
+.DS_Store
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
@@ -133,7 +134,7 @@ venv.bak/
 .spyderproject
 .spyproject
 
-static/.DS_Store/
+
 # Rope project settings
 .ropeproject
 
