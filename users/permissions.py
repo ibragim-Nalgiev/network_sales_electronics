@@ -1,8 +1,8 @@
 from rest_framework import permissions
 
 
-class IsClientActive(permissions.BasePermission):
-    message = 'Только для активных клиентов'
+class IsUserActive(permissions.BasePermission):
+    message = 'Только для активных сотрудников'
 
     def has_permission(self, request, view):
         if request.user.is_active:
