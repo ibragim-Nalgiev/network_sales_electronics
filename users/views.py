@@ -4,7 +4,7 @@ from rest_framework.permissions import IsAdminUser, IsAuthenticated
 from .paginations import UserPagination
 
 from users.models import User
-from users.permissions import IsClientActive, IsStaffOrSuperuser
+from users.permissions import IsUserActive, IsStaffOrSuperuser
 from users.serializers import UserSerializer, UserCRUDSerializer
 
 
@@ -17,7 +17,7 @@ class UserListAPIView(generics.ListAPIView):
 
 class UserCreateAPIView(generics.CreateAPIView):
     serializer_class = UserCRUDSerializer
-    permission_classes = [IsClientActive, IsAdminUser]
+    permission_classes = [IsUserActive, IsAdminUser]
     pagination_class = UserPagination
 
 
