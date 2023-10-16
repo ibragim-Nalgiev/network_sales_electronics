@@ -1,6 +1,6 @@
-Описание проекта network_sales_electronics
+#Описание проекта *network_sales_electronics*
 
-network_sales_electronics это django-rest-framework проект.
+##network_sales_electronics это django-rest-framework проект.
 
 Данное серверное приложение создано для работы с базой данных по созданию, управлению сетью по продажам электроники.
 
