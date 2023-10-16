@@ -41,6 +41,9 @@ urlpatterns = [
 
     path('products/', include('products.urls', namespace='products')),
     path('users/', include('users.urls', namespace='users')),
+    path('factory/', include('factory.urls', namespace='factory')),
+    path('networks_electronics/', include('networks_electronics.urls', namespace='networks_electronics')),
+    path('sole_proprietor/', include('sole_proprietor.urls', namespace='sole_proprietor')),
 
     path('swagger/', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),
     path('redoc/', schema_view.with_ui('redoc', cache_timeout=0), name='schema-redoc'),
